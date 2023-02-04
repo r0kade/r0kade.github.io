@@ -7,7 +7,7 @@ let bar = create({
 bar.appendChild(create({
   type: 'a',
   class: 'w3-bar-item w3-button w3-hover-gray',
-  href: 'album.html',
+  href: 'albums.html',
   content: 'albums'
 }))
 
@@ -28,8 +28,15 @@ let elements = [
   bar,
   create({
     type: 'p',
-    content: 'Hello! I\'m Rokade. I\'m a music composer/producer from Indonesia. I usually make chiptune music, but I also like trying out new genres sometimes. I never release singles or EPs, all of my releases are 12 track albums.'
-  })
+    content: 'Hello! I\'m Rokade. I\'m a music composer/producer from Indonesia. I usually make chiptune music, but I also like trying out new genres sometimes. I never release singles or EPs, all of my releases are 12 track albums. All of my music is licensed CC BY 4.0'
+  }),
+  br, br,
+  create({
+    type: 'p',
+    class: 'w3-gray',
+    content: 'by the way, Rokade means Castling in Indonesian.'
+  }),
+  hr,
 ]
 
 link('stylesheet', 'css/main.css')
