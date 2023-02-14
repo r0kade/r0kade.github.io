@@ -19,6 +19,9 @@ let create = data => {
     if(data.download) doc.setAttribute('download', '')
     if(data.rel) doc.setAttribute('rel', data.rel)
     if(data.href) doc.setAttribute('href', data.href)
+    if(data.children) for(child of data.children) {
+      doc.appendChild(child)
+    }
     return doc
 }
 let link = (rel, href) => {
