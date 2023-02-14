@@ -10,7 +10,7 @@ let create = data => {
         let text = document.createTextNode(data.content)
         doc.appendChild(text)
     } 
-    // if(data.attributes) for(let i = 0;i<attributes.length;i+=2) doc.setAttribute(atrributes[i], attributes[i++])
+    //if(data.attributes) for(i in data.attributes) doc.setAttribute(data.attributes[i], data.attributes[i+1])
     if(data.style) doc.setAttribute('style', data.style)
     if(data.class) doc.setAttribute('class', data.class)
     if(data.src) doc.setAttribute('src', data.src)

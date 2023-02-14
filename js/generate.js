@@ -43,3 +43,4 @@ let appendAll = docs => {
         main.appendChild(docs[i])
     }
 }
+let changeTitle = title => document.getElementById('title').innerText += ` // ${title}`

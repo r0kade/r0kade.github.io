@@ -12,15 +12,21 @@ let elements = [
     children: [
       create({
         type: 'a',
-        class: 'w3-bar-item w3-button w3-hover-dark-gray',
+        class: 'w3-bar-item w3-white w3-button w3-hover-dark-gray',
         href: 'albums.html',
         content: 'albums'
       }),
       create({
         type: 'a',
-        class: 'w3-bar-item w3-button w3-hover-dark-gray',
+        class: 'w3-bar-item w3-white w3-button w3-hover-dark-gray',
         href: 'updates.html',
         content: 'updates'
+      }),
+      create({
+        type: 'a',
+        class: 'w3-bar-item w3-white w3-button w3-hover-dark-gray',
+        href: 'visual-art.html',
+        content: 'visual art'
       })
     ]
   }),
