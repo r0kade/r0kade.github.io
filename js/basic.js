@@ -4,13 +4,11 @@ let log = message => console.log(message)
 let warn = message => console.warn(message)
 let create = data => {
     if(!data.type) data.type = 'where-type'
-
     let doc = document.createElement(data.type)
     if(data.content){
         let text = document.createTextNode(data.content)
         doc.appendChild(text)
     } 
-    //if(data.attributes) for(i in data.attributes) doc.setAttribute(data.attributes[i], data.attributes[i+1])
     if(data.style) doc.setAttribute('style', data.style)
     if(data.class) doc.setAttribute('class', data.class)
     if(data.src) doc.setAttribute('src', data.src)

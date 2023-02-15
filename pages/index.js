@@ -1,6 +1,7 @@
 const NEW_ALBUM_PROGRESS = 7/12
-
-let elements = [
+link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
+link('stylesheet', 'css/main.css')
+appendAll([
   create({
     type: 'h1',
     content: 'Rokade'
@@ -58,7 +59,4 @@ let elements = [
     ]
   }),
   br,br,br,br,br,br,br,br,
-]
-
-link('stylesheet', 'css/main.css')
-appendAll(elements)
+])

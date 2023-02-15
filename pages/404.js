@@ -1,6 +1,7 @@
 changeTitle('404')
-
-let elements = [
+link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
+link('stylesheet', 'css/main.css')
+appendAll([
   createDiv({
     class: 'w3-text-red',
     children: [
@@ -10,7 +11,7 @@ let elements = [
       }),
       create({
         type: 'p',
-        content: 'The page you were looking for doesn\'t exist...'
+        content: 'The page you were looking for doesn\'t exist.'
       }), br,br,br,br,br,br,br,hr,
       create({
         type: 'p',
@@ -23,7 +24,4 @@ let elements = [
           })]
       })]
   })
-]
-
-link('stylesheet', 'css/main.css')
-appendAll(elements)
+])
