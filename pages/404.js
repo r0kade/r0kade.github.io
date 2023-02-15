@@ -1,6 +1,7 @@
 changeTitle('404')
 link('stylesheet', 'css/main.css')
 appendAll([
+  br,br,
   createDiv({
     class: 'w3-text-red',
     children: [
