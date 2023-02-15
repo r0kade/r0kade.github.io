@@ -17,7 +17,7 @@
   maincol.appendChild(create({
     type: 'div',
     class: 'w3-container',
-    id: 'main'
+    id: 'main',
   }))
   row.appendChild(maincol)
   row.appendChild(create({
