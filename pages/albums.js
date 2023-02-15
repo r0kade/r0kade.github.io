@@ -8,7 +8,7 @@ appendAll([
     create({
       type: 'p',
       class: 'w3-text-gray',
-      content: `I should've named this page as "Discography" instead of "Albums" but since all of my releases are albums (no singles, EPs), I think "Albums" is more relevant for this page.`,
+      content: `I should've named this page as "Discography" instead of "Albums" but since all of my releases are albums (no singles, EPs), I think the name "Albums" is more relevant for this page.`,
       children: [
         create({
           type: 'p',
