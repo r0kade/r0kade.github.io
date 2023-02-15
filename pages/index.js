@@ -1,5 +1,4 @@
 const NEW_ALBUM_PROGRESS = 7/12
-link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
 link('stylesheet', 'css/main.css')
 appendAll([
   create({
@@ -14,7 +13,7 @@ appendAll([
       create({
         type: 'a',
         class: 'w3-bar-item w3-white w3-button w3-hover-dark-gray',
-        href: 'albums.html',
+        href: 'albums',
         content: 'albums'
       }),
       create({

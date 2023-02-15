@@ -1,5 +1,4 @@
 changeTitle('404')
-link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
 link('stylesheet', 'css/main.css')
 appendAll([
   createDiv({

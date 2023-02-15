@@ -1,3 +1,5 @@
+// document.bgColor = 'black'
+
 (() => {
   // generate rows
   let row = create({
@@ -36,3 +38,4 @@ let appendAll = docs => {
     }
 }
 let changeTitle = title => document.getElementById('title').innerText += ` // ${title}`
+link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
