@@ -8,11 +8,11 @@
   })
   row.appendChild(create({
     type: 'div',
-    class: 'w3-col l2 w3-container',
+    class: 'w3-col m2 w3-container',
   }))
   let maincol = create({
     type: 'div',
-    class: 'w3-col l8 w3-container'
+    class: 'w3-col m8 w3-container'
   })
   maincol.appendChild(create({
     type: 'div',
@@ -22,7 +22,7 @@
   row.appendChild(maincol)
   row.appendChild(create({
     type: 'div',
-    class: 'w3-col l2 w3-container'
+    class: 'w3-col m2 w3-container'
   }))
   display([row])
   document.getElementsByTagName('head')[0].appendChild(create({
