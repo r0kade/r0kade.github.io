@@ -1,3 +1,21 @@
+/** arrays n stuff */
+// format: title, description, link, release date, color
+const ALBUMS = [
+  // december chip sketches 
+  'December Chip Sketches', 'My first album.', 
+  'december-chip-sketches.html', 'December 30, 2022',
+  'pink'/*,
+  // the london system
+  'The London System', 'My favorite chess opening.',
+  'the-london-system.html', '-',
+  'yellow'*/
+]
+// format: name, link
+const SOCIALS = [
+  'YouTube', 'youtube.com/@r0kade',
+  'Bandcamp', 'rokade.bandcamp.com',
+  'GitHub', 'github.com/r0kade'
+]
 let ok = 'ok'
 let bodyS = document.body.style
 let log = message => console.log(message)
@@ -42,4 +60,15 @@ let display = docs => {
         document.body.appendChild(docs[i])
     }
 }
+let back = link => createDiv({
+  children: [
+    hr,
+    create({
+      type: 'a',
+      class: 'w3-text-gray',
+      content: 'main page',
+      href: link
+    })
+  ]
+})
 log(ok)

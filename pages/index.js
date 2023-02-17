@@ -1,11 +1,16 @@
 const NEW_ALBUM_PROGRESS = 7/12
 link('stylesheet', 'css/main.css')
+link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css')
 appendAll([
   create({
     type: 'h1',
     content: 'Rokade'
   }),
   create({type:'p'}),
+  createDiv({
+    class: 'w3-bar w3-white',
+    id: 'socials'
+  }),
   create({
     type: 'div',
     class: 'w3-bar w3-white',
@@ -59,3 +64,11 @@ appendAll([
   }),
   br,br,br,br,br,br,br,br,
 ])
+for(let i = 0; i < SOCIALS.length; i+=2){
+  document.getElementById('socials').appendChild(create({
+    type: 'a',
+    href: `https://${SOCIALS[i+1]}`,
+    style: 'font-size:25px;',
+    class: `w3-bar-item w3-button w3-hover-dark-gray w3-text-dark-gray fa-brands fa-${SOCIALS[i].toLowerCase()}`
+  }))
+}

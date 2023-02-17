@@ -1,7 +1,5 @@
-// document.bgColor = 'black'
-
+/** row generator **/
 (() => {
-  // generate rows
   let row = create({
     type: 'div',
     class: 'w3-row w3-black'
@@ -39,3 +37,7 @@ let appendAll = docs => {
 }
 let changeTitle = title => document.getElementById('title').innerText += ` // ${title}`
 link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css')
+let script = src => document.body.appendChild(create({
+  type: 'script',
+  src: src
+}))

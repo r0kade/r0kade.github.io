@@ -11,16 +11,8 @@ appendAll([
       create({
         type: 'p',
         content: 'The page you were looking for doesn\'t exist.'
-      }), br,br,br,br,br,br,br,hr,
-      create({
-        type: 'p',
-        class: 'w3-text-gray',
-        children: [
-          create({
-            type: 'a',
-            href: 'index.html',
-            content: 'main page'
-          })]
-      })]
+      }), br,br,br,br,br,br,br,
+      back('index.html')
+    ]
   })
 ])
