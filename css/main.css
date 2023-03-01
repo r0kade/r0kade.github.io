@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+h1{font-size:44px; font-family: 'Roboto Mono', monospace;}
+
+h2{font-size:38px; font-family: 'Roboto Mono', monospace;}
+
+h3{font-size:31px; font-family: 'Roboto Mono', monospace;}
+h4{font-size:22px; font-family: 'Roboto Mono', monospace;}
+h5{font-size:19px; font-family: 'Roboto Mono', monospace;}
+h6{font-size:16px; font-family: 'Roboto Mono', monospace;}
+
 html {
     font-family: 'Roboto Mono', monospace;
-    font-size: medium;
+    /* font-size: medium; */
     background-color: black;
 }
 body {
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-    /* background-color: black; */
+    font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 8px 0 8px 0;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-}
-h1 { font-size: x-large }
-h2 { font-size: large; }
 
 .fa {
   font-size: 18px

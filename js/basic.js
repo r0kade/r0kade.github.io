@@ -23,10 +23,11 @@ let warn = message => console.warn(message)
 let create = data => {
     if(!data.type) data.type = 'where-type'
     let doc = document.createElement(data.type)
-    if(data.content){
-        let text = document.createTextNode(data.content)
-        doc.appendChild(text)
-    } 
+    if (data.content || data.text) {
+      if(!data.content) data.content = data.text
+      let text = document.createTextNode(data.content)
+      doc.appendChild(text)
+    }
     if(data.style) doc.setAttribute('style', data.style)
     if(data.class) doc.setAttribute('class', data.class)
     if(data.src) doc.setAttribute('src', data.src)
@@ -120,3 +121,12 @@ let changeTitle2 = title => document.getElementsByTagName('title')[0].innerHTML 
 let create2 = (type, data) => create(Object.assign(data, { type: type }))
 let random = max => Math.floor(Math.random() * max)
 let randomBool = () => Math.random() < 0.5
+let fav = icon => { 
+  let t = create2('link', {
+    rel: 'icon',
+    href: icon + 'favicon.png'
+  })
+  t.setAttribute('type', 'image/x-icon')
+  document.getElementsByTagName('head')[0].appendChild(t) 
+}
+c = (tag, data) => create2(tag, data)
